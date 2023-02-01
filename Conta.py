@@ -20,9 +20,13 @@ class Conta:
     def transfere(self, valor, destino):
         self.saca(valor)
         destino.deposita(valor)
-
-    def get_saldo(self):
+    @property
+    def saldo(self):
         return self.__saldo
+    
+    @property
+    def titular(self):
+        return self.titular
     
     @property
     def limite(self):
@@ -32,3 +36,4 @@ class Conta:
     def limite(self, limite):
         self.__limite = limite
 
+ 
