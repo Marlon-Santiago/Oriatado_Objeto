@@ -23,7 +23,7 @@ class Conta:
         if(self.__pode_sacar(valo)):
             self.__saldo -= valor
         else:
-            print(f'O valor {valor} passou so limete disponivel para saque')
+            print(f'O valor {valor} passou do limete disponivel para saque')
 
     def transfere(self, valor, destino):
         self.saca(valor)
